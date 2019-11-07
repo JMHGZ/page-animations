@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #707078, #b8c7d1);
+  z-index: -1;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 1.75em;
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  justify-self: end;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.mtn {
+  height: 60%;
+  width: 100%;
+}
+
+.mtn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tagline {
+  position: absolute;
+  top: 67%;
+  left: 20%;
+  font-size: 2.5em;
+  transform: translate(-20%, -70%);
+  color: white;
+}
